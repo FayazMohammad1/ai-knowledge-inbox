@@ -1,0 +1,19 @@
+{
+  "name": "ai-knowledge-inbox",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Save notes and URLs, then ask questions over them with a small RAG pipeline.",
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix frontend",
+    "dev": "concurrently -n api,web -c blue,green \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "start": "npm run start --prefix backend",
+    "build": "npm run build --prefix frontend",
+    "test": "npm run test --prefix backend && npm run test --prefix frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

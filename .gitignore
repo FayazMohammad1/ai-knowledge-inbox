@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# SQLite runtime files
+backend/data/*.db
+backend/data/*.db-shm
+backend/data/*.db-wal
+
+# Frontend build output
+frontend/dist/
+dist/
+
+# Test and tool output
+coverage/
+.nyc_output/
+*.log
+
+# Operating system and editor files
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
